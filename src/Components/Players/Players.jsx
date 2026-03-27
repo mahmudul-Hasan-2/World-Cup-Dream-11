@@ -51,7 +51,10 @@ const Players = ({
         <SelectedPlayers
           selectedData={selectedData}
           players={players}
-          selectedType={selectedType}
+          setSelectedType={setSelectedType}
+          setSelectedData={setSelectedData}
+          setCurrentBalance={setCurrentBalance}
+          currentBalance={currentBalance}
         ></SelectedPlayers>
       )}
     </div>

@@ -1,13 +1,10 @@
 import { Trash2Icon } from "lucide-react";
 import React from "react";
 
-const SelectedPlayer = ({ selected }) => {
-  const handleDeletePlayer = () => {
-    
-  };
+const SelectedPlayer = ({ selected, handleDeletePlayer }) => {
   return (
-    <div className="flex items-center justify-between">
-      <div className="flex items-center gap-4">
+    <div className="flex flex-col sm:flex-row text-center sm:text-start items-center justify-between border border-[#13131310] p-6 rounded-2xl gap-4">
+      <div className="flex flex-col sm:flex-row items-center gap-4">
         <div>
           <img
             src={selected.player_image}
@@ -23,7 +20,10 @@ const SelectedPlayer = ({ selected }) => {
         </div>
       </div>
       <button className="cursor-pointer">
-        <Trash2Icon color="red" onClick={handleDeletePlayer}></Trash2Icon>
+        <Trash2Icon
+          color="red"
+          onClick={() => handleDeletePlayer(selected)}
+        ></Trash2Icon>
       </button>
     </div>
   );
