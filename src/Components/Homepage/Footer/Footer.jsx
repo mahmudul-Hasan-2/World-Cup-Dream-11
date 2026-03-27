@@ -12,7 +12,7 @@ const Footer = () => {
             <h2 className="text-xl sm:text-3xl font-bold text-[#131313]">
               Subscribe to our Newsletter
             </h2>
-            <p className="text-base max-w-2xs sm:text-[20px] text-[#13131370]">
+            <p className="text-base max-w-2xs mx-auto sm:text-[20px] text-[#13131370]">
               Get the latest updates and news right in your inbox!
             </p>
           </div>
