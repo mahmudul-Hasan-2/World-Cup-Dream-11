@@ -12,7 +12,7 @@ A simple React-based fantasy cricket team builder where users can select their f
 
 - **Player Selection:** Users can add players to their squad.
 - **Budget Management:** Automatic balance deduction when a player is selected.
-- **Validation:** Prevents selecting more than 6 players or selecting the same player twice.
+- **Validation:** Prevents selecting more than 11 players or selecting the same player twice.
 - **Responsive Design:** Fully optimized for mobile and desktop using Tailwind CSS.
 - **Toast Notifications:** Real-time alerts for successful or invalid actions.
 
