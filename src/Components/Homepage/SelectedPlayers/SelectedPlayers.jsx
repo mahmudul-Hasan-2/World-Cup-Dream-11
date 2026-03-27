@@ -1,14 +1,17 @@
 import React from "react";
+import SelectedPlayer from "../SelectedPlayer/SelectedPlayer";
 
-const SelectedPlayers = () => {
+const SelectedPlayers = ({ selectedData, players }) => {
+  console.log(selectedData);
   return (
     <div>
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        assumenda aliquid obcaecati non nesciunt nostrum facere deleniti, beatae
-        vel explicabo ad molestias odit sed sunt suscipit autem accusamus
-        corrupti consequatur.
-      </h2>
+      {selectedData.map((selected) => (
+        <SelectedPlayer
+          key={selected.player_id}
+          selected={selected}
+          players={players}
+        ></SelectedPlayer>
+      ))}
     </div>
   );
 };

@@ -49,8 +49,9 @@ const Players = ({
         ></AvailablePlayers>
       ) : (
         <SelectedPlayers
-          setSelectedData={setSelectedData}
           selectedData={selectedData}
+          players={players}
+          selectedType={selectedType}
         ></SelectedPlayers>
       )}
     </div>

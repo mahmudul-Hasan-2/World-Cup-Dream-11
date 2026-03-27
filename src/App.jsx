@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./Components/Homepage/Banner/Banner";
 import Navbar from "./Components/Navbar/Navbar";
 import Players from "./Components/Players/Players";
+import { ToastContainer } from "react-toastify";
 
 const loadPlayers = async () => {
   let res = await fetch("/players.json");
@@ -36,6 +37,7 @@ function App() {
           setCurrentBalance={setCurrentBalance}
         ></Players>
       </Suspense>
+      <ToastContainer></ToastContainer>
     </>
   );
 }
